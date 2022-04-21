@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    style="?attr/materialCardViewElevatedStyle"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardElevation="8dp">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/photo_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            tools:src="@color/md_theme_dark_primaryContainer" />
+
+        <TextView
+            android:id="@+id/title_text_view"
+            style="@style/TextAppearance.Material3.TitleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            tools:text="Turning Red" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</com.google.android.material.card.MaterialCardView>
